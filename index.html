@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <div class="card w-75">
+        <div class="card w-50">
           <a href="img/plots/geography.png" target="blank">
             <img class="card-img-bottom" src="img/plots/geography.png" alt="geography of clusters">
           </a>
@@ -206,24 +206,87 @@
           which is a very simple model. As a next step, we will implement more powerful mathematical machine learning
           tools, to make better predictions of infection speed based on structural characteristics. In other words, we
           will replace our very simple crystal ball by a more potent one. This will serve as the basis to look for
-          positive deviants and their behavior.
+          positive deviants and their behavior.</p>
 
 
-          <div class="card">
-            <a href="img/plots/Chosen_Factors_MSE_Delta_Plot_final.PNG" target="blank">
-              <img class="card-img-bottom" src="img/plots/Chosen_Factors_MSE_Delta_Plot_final.PNG"
-                alt="Chosen_Factors_MSE_Delta_Plot_final.PNG">
-            </a>
-            <div class="card-body">
-              <p class="card-text">This graphic shows how leaving out a certain factor changes the performance of our
-                crystal ball. A bar pointing downwards means that the performance of the model is affected negatively,
-                indicating that the factor is important for the spread of Corona. Results on this should be seen as
-                preliminary and not yet be interpreted too strongly. We hope that in a few weeks a more sound data basis
-                will enable us to produce more precise and reliable results. Rather, we see this as a starting point of
-                a methodological approach aiming at identifying positive deviants and their behaviour which make them
-                more resistant to the spread of a virus.</p>
-            </div>
+        <div class="card">
+          <a href="img/plots/Chosen_Factors_MSE_Delta_Plot_final.PNG" target="blank">
+            <img class="card-img-bottom" src="img/plots/Chosen_Factors_MSE_Delta_Plot_final.PNG"
+              alt="Chosen_Factors_MSE_Delta_Plot_final.PNG">
+          </a>
+          <div class="card-body">
+            <p class="card-text">This graphic shows how leaving out a certain factor changes the performance of our
+              crystal ball. A bar pointing downwards means that the performance of the model is affected negatively,
+              indicating that the factor is important for the spread of Corona. Results on this should be seen as
+              preliminary and not yet be interpreted too strongly. We hope that in a few weeks a more sound data basis
+              will enable us to produce more precise and reliable results. Rather, we see this as a starting point of
+              a methodological approach aiming at identifying positive deviants and their behaviour which make them
+              more resistant to the spread of a virus.</p>
           </div>
+        </div>
+
+
+
+
+
+
+        <h2 class="font-weight-light">which structural factors correlate with the speed of corona infections?</h2>
+
+
+        <div class="card">
+          <a href="img/plots/coefficientsAsugewaehlte.png" target="blank">
+            <img class="card-img-bottom" src="img/plots/coefficientsAsugewaehlte.png"
+              alt="coefficientsAsugewaehlte.png">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Depicted are coefficients of a linear regression model between 14 selected structural
+              factors and infection speed of the Coronavirus in a district. This graphic shows how leaving out a certain
+              factor changes the performance of our crystal ball. A bar to the right shows that the performance is
+              affected negatively, indicating that the factor is important for the spread of Corona. Since the database
+              for the numbers of infected people has yet to become more robust over time and our mathematical model is
+              quite simple at this point, results should not be overstated for the time being but should become more
+              meaningful over time.</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+          <a href="img/plots/r0_vs_bundeslaender_and_lkpng.png" target="blank">
+            <img class="card-img-bottom" src="img/plots/r0_vs_bundeslaender_and_lkpng.png"
+              alt="r0_vs_bundeslaender_and_lkpng.png">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Sorted by states (Bundesländer), this graph shows the predicted number of new
+              infections spread from one already infected individual R0. The predicted rate of how quickly new
+              Coronavirus infections are spreading is lower in the district of Heinsberg, compared to, for example
+              Tübingen. R0 is estimated from the Robert Koch Institut (RKI) incidence data based on Thompson et. al.
+              (_Thompson, R. N., et al. "Improved inference of time-varying reproduction numbers during infectious
+              disease outbreaks." Epidemics 29 (2019): 100356._)
+              The logarithmic plot of newly infected people in Heinsberg is illustrated below. We see how the speed of
+              the spread increases over time.</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Outlook -->
+        <h1 class="font-weight-light">where do we go from here: from clustering to positive deviance</h1>
+        <p class="lead">Based on the data that we gathered throughout the last 48 hours and our first analysis we were
+          able to gain a glimpse of the impact of structural variables on the spread or slow-down of the corona
+          outbreak. Within the next days and weeks we seek to further refine this model, to create an increasingly
+          solid database and to improve our clustering. <mark><strong>As presented, the clustering does already offer
+              some great insights but is in itself only a step towards identifying positive deviants: counties and
+              municipalities that outperform others not based on the structural variables that we accounted for in the
+              clustering, but based on unusual and highly-effective behaviors in tackling the corona outbreak. These
+              behaviors are highly context-sensitive and might potentially benefit all counties and municipalities,
+              but especially those in the same cluster, as the structural conditions are similar.</strong></mark>
+        </p>
+
 
 
 
